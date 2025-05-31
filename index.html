@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Validation</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form id="myForm">
+    <label>Name:</label><br>
+    <input type="text" id="name" placeholder="Your Name" required><br>
+
+    <label>Email:</label><br>
+    <input type="email" id="email" placeholder="abc@gmail.com" required><br>
+
+    <label>Phone:</label><br>
+    <input type="text" id="phone" placeholder="phone number" maxlength="10" required><br>
+
+    <label>Password:</label><br>
+    <input type="password" id="password" placeholder="Password" required>
+    <span class="toggle" id="togglePass">Show</span><br>
+
+    <label>Confirm Password:</label><br>
+    <input type="password" id="cnfpassword" placeholder="Confirm Password"><br>
+
+    <button type="submit" class="btn">Submit</button>
+    <div id="error"></div>
+  </form>
+
+  <script src="script.js">
+  </script>
+</body>
+</html>
